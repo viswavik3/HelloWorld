@@ -5,10 +5,9 @@ import static org.junit.Assert.*;
 
 public class HelloWorldTest {
     @Test
-    public void testHelloWorld() {
-        HelloWorld helloWorld = new HelloWorld();
+    public void testGetGreeting() {
         String expectedOutput = "Hello, world!";
-        String actualOutput = helloWorld.getGreeting();
+        String actualOutput = HelloWorld.getGreeting();
         assertEquals(expectedOutput, actualOutput);
     }
 }
